@@ -24,7 +24,7 @@ import (
 	"fmt"
 	"net/http"
 
-	whttp "github.com/piusalfred/whatsapp/http"
+	whttp "github.com/SeamPay/whatsapp/http"
 )
 
 var ErrUnexpectedResponseCode = fmt.Errorf("unexpected response code")

@@ -28,9 +28,9 @@ import (
 	"sync"
 	"time"
 
-	whttp "github.com/piusalfred/whatsapp/http"
-	"github.com/piusalfred/whatsapp/models"
-	"github.com/piusalfred/whatsapp/qrcodes"
+	whttp "github.com/SeamPay/whatsapp/http"
+	"github.com/SeamPay/whatsapp/models"
+	"github.com/SeamPay/whatsapp/qrcodes"
 )
 
 var ErrBadRequestFormat = errors.New("bad request")

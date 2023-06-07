@@ -19,7 +19,10 @@
 
 package models
 
-import "time"
+import (
+	"encoding/json"
+	"time"
+)
 
 const (
 	InteractiveMessageButton      = "button"
@@ -333,7 +336,7 @@ type (
 		Type       string               `json:"type,omitempty"`
 		SubType    string               `json:"sub_type,omitempty"`
 		Parameters []*TemplateParameter `json:"parameters,omitempty"`
-		Index      int                  `json:"index,omitempty"`
+		Index      json.Number          `json:"index,omitempty"`
 	}
 
 	// Product ...
@@ -806,7 +809,7 @@ func NewMediaTemplate(name string, language *TemplateLanguage, header *TemplateP
 
 type InteractiveButtonTemplate struct {
 	SubType string
-	Index   int
+	Index   json.Number
 	Button  *TemplateButton
 }
 

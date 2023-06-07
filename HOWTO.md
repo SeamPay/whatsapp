@@ -30,9 +30,9 @@ import (
 	"os"
 	"time"
 
-	"github.com/piusalfred/whatsapp"
-	whttp "github.com/piusalfred/whatsapp/http"
-	"github.com/piusalfred/whatsapp/models"
+	"github.com/SeamPay/whatsapp"
+	whttp "github.com/SeamPay/whatsapp/http"
+	"github.com/SeamPay/whatsapp/models"
 )
 
 func main() {
@@ -69,7 +69,7 @@ func main() {
 
 	// Sending a text message
 	message := &whatsapp.TextMessage{
-		Message:    "Hello there!!!\n 😺Find me at https://github.com/piusalfred/whatsapp 👩🏻‍🦰",
+		Message:    "Hello there!!!\n 😺Find me at https://github.com/SeamPay/whatsapp 👩🏻‍🦰",
 		PreviewURL: true,
 	}
 
@@ -216,7 +216,7 @@ func main() {
 		Header: header,
 	}
 
-	models.WithInteractiveFooter("https://github.com/piusalfred/whatsapp")(&interactive)
+	models.WithInteractiveFooter("https://github.com/SeamPay/whatsapp")(&interactive)
 	models.WithInteractiveBody(bodyText)(&interactive)
 
 	response, err = client.SendInteractiveMessage(ctx, recipient, &interactive)

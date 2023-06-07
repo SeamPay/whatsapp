@@ -30,7 +30,7 @@ import (
 	"net/url"
 	"strings"
 
-	werrors "github.com/piusalfred/whatsapp/errors"
+	werrors "github.com/SeamPay/whatsapp/errors"
 )
 
 const BaseURL = "https://graph.facebook.com"

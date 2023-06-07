@@ -23,7 +23,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/piusalfred/whatsapp/errors"
+	"github.com/SeamPay/whatsapp/errors"
 )
 
 func TestErrorDecodeFunc(t *testing.T) {
